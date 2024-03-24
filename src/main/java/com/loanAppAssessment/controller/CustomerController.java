@@ -25,4 +25,6 @@ public class CustomerController {
                                  @RequestParam(defaultValue = "000") String date){
         return customerService.createCustomer(name, email, contact, amount, term, date);
     }
+
+
 }
