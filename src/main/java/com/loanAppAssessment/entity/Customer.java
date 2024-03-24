@@ -17,7 +17,4 @@ public class Customer {
     String email;
     @Id
     String contact; // this is unique for each user
-    Long amount;
-    int term;
-    String date;
 }

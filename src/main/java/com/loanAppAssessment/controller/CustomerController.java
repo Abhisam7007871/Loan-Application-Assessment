@@ -16,15 +16,16 @@ import java.util.Date;
 public class CustomerController {
     @Autowired
     private CustomerService customerService;
-    @PostMapping(value = "/create")
+    @PostMapping(value = "/createCustomer")
     public Result createCustomer(String name,
                                  String email,
-                                 String contact,
-                                 Long amount,
-                                 int term,
-                                 @RequestParam(defaultValue = "000") String date){
-        return customerService.createCustomer(name, email, contact, amount, term, date);
+                                 String contact){
+        return customerService.createCustomer(name, email, contact);
     }
 
+    @GetMapping("/getCustomer")
+    public Result getCustomer(String contact){
+        return customerService.getCustomer(contact);
+    }
 
 }
