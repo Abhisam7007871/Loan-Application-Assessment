@@ -1,4 +1,4 @@
-package com.loanAppAssessment.Loan.Application.Assessment;
+package com.loanAppAssessment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
